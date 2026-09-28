@@ -17,6 +17,7 @@ add_library(NppJsonTools SHARED
     src/PluginDefinition.cpp
     src/NppJsonTools.cpp
     src/JsonUtils.cpp
+    src/NppJsonTools.rc
 )
 
 target_compile_definitions(NppJsonTools PRIVATE UNICODE _UNICODE)

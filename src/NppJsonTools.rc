@@ -1,0 +1,37 @@
+#include <winres.h>
+
+#define SIMPLIFY_JSON_VERSION "1.0.1.0\0"
+#define SIMPLIFY_JSON_VERSION_WORDS 1, 0, 1, 0
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION SIMPLIFY_JSON_VERSION_WORDS
+ PRODUCTVERSION SIMPLIFY_JSON_VERSION_WORDS
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Vipul Patil\0"
+            VALUE "FileDescription", "Practical JSON tools for Notepad++\0"
+            VALUE "FileVersion", SIMPLIFY_JSON_VERSION
+            VALUE "InternalName", "SimplifyJson\0"
+            VALUE "LegalCopyright", "Copyright (c) 2026 Vipul Patil\0"
+            VALUE "OriginalFilename", "SimplifyJson.dll\0"
+            VALUE "ProductName", "SimplifyJson\0"
+            VALUE "ProductVersion", SIMPLIFY_JSON_VERSION
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END
